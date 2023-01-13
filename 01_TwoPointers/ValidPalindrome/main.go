@@ -3,18 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Valid Palindrome\n")
+	fmt.Println("Valid Palindrome")
 	if isPalindrome("buzeyzub") {
-		fmt.Print("true\n")
+		fmt.Println("true")
 	} else {
-		fmt.Print("false\n")
+		fmt.Println("false")
 	}
 }
 
 func isPalindrome(inputString string) bool {
-	// Write your code here
-	// Tip: You may use the code template provided
-	// in the two_pointers.go file
 	left := 0
 	right := len(inputString) - 1
 
